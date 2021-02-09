@@ -1,19 +1,15 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/pushdocspage/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="/pushdocspage/logo192.png" />
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/pushdocspage/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="/pushdocspage/logo192.png">
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="/pushdocspage/manifest.json" />
+    <link rel="manifest" href="/pushdocspage/manifest.json">
     <!--
       Notice the use of /pushdocspage in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -219,357 +215,293 @@
             format("woff");
       }
     </style>
-    <style>
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-          "Helvetica Neue", sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-      code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-          monospace;
-      }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
-      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFO2FBQ1c7QUFDYiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmNvZGUge1xuICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICBtb25vc3BhY2U7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */
-    </style>
-    <style>
-      .App {
-        text-align: center;
-      }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFO2FBQ1c7QUFDYiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmNvZGUge1xuICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICBtb25vc3BhY2U7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.App {
+  text-align: center;
+}
 
-      .App-logo {
-        height: 40vmin;
-        pointer-events: none;
-      }
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
 
-      @media (prefers-reduced-motion: no-preference) {
-        .App-logo {
-          animation: App-logo-spin infinite 20s linear;
-        }
-      }
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 
-      .App-header {
-        background-color: #282c34;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: calc(10px + 2vmin);
-        color: white;
-      }
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
-      .App-link {
-        color: #61dafb;
-      }
+.App-link {
+  color: #61dafb;
+}
 
-      @keyframes App-logo-spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRTtJQUNFLDRDQUE0QztFQUM5QztBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGlCQUFpQjtFQUNqQixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsNkJBQTZCO0VBQzdCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRTtJQUNFLHVCQUF1QjtFQUN6QjtFQUNBO0lBQ0UseUJBQXlCO0VBQzNCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuQXBwIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uQXBwLWxvZ28ge1xuICBoZWlnaHQ6IDQwdm1pbjtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbkBtZWRpYSAocHJlZmVycy1yZWR1Y2VkLW1vdGlvbjogbm8tcHJlZmVyZW5jZSkge1xuICAuQXBwLWxvZ28ge1xuICAgIGFuaW1hdGlvbjogQXBwLWxvZ28tc3BpbiBpbmZpbml0ZSAyMHMgbGluZWFyO1xuICB9XG59XG5cbi5BcHAtaGVhZGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI4MmMzNDtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmb250LXNpemU6IGNhbGMoMTBweCArIDJ2bWluKTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uQXBwLWxpbmsge1xuICBjb2xvcjogIzYxZGFmYjtcbn1cblxuQGtleWZyYW1lcyBBcHAtbG9nby1zcGluIHtcbiAgZnJvbSB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7XG4gIH1cbiAgdG8ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */
-    </style>
-    <style>
-      .homeBase {
-        display: flex;
-        width: 100%;
-        min-height: 100vh;
-      }
-      .sidebar {
-        width: 300px;
-        background: #f4f7f9;
-        position: relative;
-        border-right: 1px solid #e6ecf1;
-      }
-      .container {
-        width: calc(100% - 300px);
-      }
-      .mobileOnly {
-        display: none;
-      }
-      @media only screen and (max-width: 900px) {
-        .mobileOnly {
-          display: block;
-        }
-        .homeBase {
-          flex-direction: column;
-        }
-        .sidebar {
-          display: none;
-        }
-        .container {
-          width: 100%;
-        }
-      }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRTtJQUNFLDRDQUE0QztFQUM5QztBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGlCQUFpQjtFQUNqQixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsNkJBQTZCO0VBQzdCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRTtJQUNFLHVCQUF1QjtFQUN6QjtFQUNBO0lBQ0UseUJBQXlCO0VBQzNCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuQXBwIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uQXBwLWxvZ28ge1xuICBoZWlnaHQ6IDQwdm1pbjtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbkBtZWRpYSAocHJlZmVycy1yZWR1Y2VkLW1vdGlvbjogbm8tcHJlZmVyZW5jZSkge1xuICAuQXBwLWxvZ28ge1xuICAgIGFuaW1hdGlvbjogQXBwLWxvZ28tc3BpbiBpbmZpbml0ZSAyMHMgbGluZWFyO1xuICB9XG59XG5cbi5BcHAtaGVhZGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI4MmMzNDtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmb250LXNpemU6IGNhbGMoMTBweCArIDJ2bWluKTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uQXBwLWxpbmsge1xuICBjb2xvcjogIzYxZGFmYjtcbn1cblxuQGtleWZyYW1lcyBBcHAtbG9nby1zcGluIHtcbiAgZnJvbSB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7XG4gIH1cbiAgdG8ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.homeBase {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 300px;
+  background: #f4f7f9;
+  position: relative;
+  border-right: 1px solid #e6ecf1;
+}
+.container {
+  width: calc(100% - 300px);
+}
+.mobileOnly {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .mobileOnly {
+    display: block;
+  }
+  .homeBase {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+}
 
-      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9Dc3MvSG9tZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2IsV0FBVztFQUNYLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsWUFBWTtFQUNaLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsK0JBQStCO0FBQ2pDO0FBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLGFBQWE7QUFDZjtBQUNBO0VBQ0U7SUFDRSxjQUFjO0VBQ2hCO0VBQ0E7SUFDRSxzQkFBc0I7RUFDeEI7RUFDQTtJQUNFLGFBQWE7RUFDZjtFQUNBO0lBQ0UsV0FBVztFQUNiO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuaG9tZUJhc2Uge1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMTAwJTtcbiAgbWluLWhlaWdodDogMTAwdmg7XG59XG4uc2lkZWJhciB7XG4gIHdpZHRoOiAzMDBweDtcbiAgYmFja2dyb3VuZDogI2Y0ZjdmOTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjZTZlY2YxO1xufVxuLmNvbnRhaW5lciB7XG4gIHdpZHRoOiBjYWxjKDEwMCUgLSAzMDBweCk7XG59XG4ubW9iaWxlT25seSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KSB7XG4gIC5tb2JpbGVPbmx5IHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgfVxuICAuaG9tZUJhc2Uge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cbiAgLnNpZGViYXIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbiAgLmNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */
-    </style>
-    <style>
-      .base {
-        width: 100%;
-        height: 100%;
-      }
-      .verticallyCenter {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-      .verticallyCenterBase {
-        composes: base;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
-      .fullWidth {
-        width: 100%;
-      }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9Dc3MvSG9tZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2IsV0FBVztFQUNYLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsWUFBWTtFQUNaLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsK0JBQStCO0FBQ2pDO0FBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLGFBQWE7QUFDZjtBQUNBO0VBQ0U7SUFDRSxjQUFjO0VBQ2hCO0VBQ0E7SUFDRSxzQkFBc0I7RUFDeEI7RUFDQTtJQUNFLGFBQWE7RUFDZjtFQUNBO0lBQ0UsV0FBVztFQUNiO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuaG9tZUJhc2Uge1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMTAwJTtcbiAgbWluLWhlaWdodDogMTAwdmg7XG59XG4uc2lkZWJhciB7XG4gIHdpZHRoOiAzMDBweDtcbiAgYmFja2dyb3VuZDogI2Y0ZjdmOTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjZTZlY2YxO1xufVxuLmNvbnRhaW5lciB7XG4gIHdpZHRoOiBjYWxjKDEwMCUgLSAzMDBweCk7XG59XG4ubW9iaWxlT25seSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KSB7XG4gIC5tb2JpbGVPbmx5IHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgfVxuICAuaG9tZUJhc2Uge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cbiAgLnNpZGViYXIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbiAgLmNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.base {
+  width: 100%;
+  height: 100%;
+}
+.verticallyCenter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.verticallyCenterBase {
+  composes: base;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.fullWidth {
+  width: 100%;
+}
 
-      .imgContainer {
-        width: 100%;
-        position: relative;
-        background: #fff;
-      }
+.imgContainer {
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
 
-      .imgContainer > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-      }
+.imgContainer > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
 
-      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9Dc3MvSW1hZ2UuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLFlBQVk7QUFDZDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFDQTtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLFNBQVM7RUFDVCxPQUFPO0VBQ1AsUUFBUTtFQUNSLFlBQVk7QUFDZDtBQUNBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLE9BQU87RUFDUCxXQUFXO0VBQ1gsWUFBWTtFQUNaLFVBQVU7QUFDWiIsInNvdXJjZXNDb250ZW50IjpbIi5iYXNlIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbn1cbi52ZXJ0aWNhbGx5Q2VudGVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuLnZlcnRpY2FsbHlDZW50ZXJCYXNlIHtcbiAgY29tcG9zZXM6IGJhc2U7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBtYXJnaW46IGF1dG87XG59XG4uZnVsbFdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5pbWdDb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xufVxuXG4uaW1nQ29udGFpbmVyID4gaW1nIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG9wYWNpdHk6IDA7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */
-    </style>
-    <style>
-      .sidebarBase {
-        position: fixed;
-        height: 100vh;
-        width: 300px;
-      }
-      .pushLogo {
-        width: 70px;
-        margin-right: 10px;
-      }
-      .logoWrapper {
-        display: flex;
-        align-items: center;
-        margin-left: 10px;
-        border-bottom: 1px solid #e6ecf1;
-      }
-      .linksWrapper {
-        padding-left: 30px;
-        margin-top: 40px;
-      }
-      .link {
-        padding: 10px;
-        text-align: left;
-        font-size: 16px;
-      }
-      .active {
-        background: #fff;
-        border: 1px solid #e6ecf1;
-        border-right: none;
-      }
-      .activeLink {
-        color: rgb(38, 203, 124) !important;
-        font-family: ProximaNova-Bold;
-      }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9Dc3MvSW1hZ2UuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLFlBQVk7QUFDZDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFDQTtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLFNBQVM7RUFDVCxPQUFPO0VBQ1AsUUFBUTtFQUNSLFlBQVk7QUFDZDtBQUNBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLE9BQU87RUFDUCxXQUFXO0VBQ1gsWUFBWTtFQUNaLFVBQVU7QUFDWiIsInNvdXJjZXNDb250ZW50IjpbIi5iYXNlIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbn1cbi52ZXJ0aWNhbGx5Q2VudGVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuLnZlcnRpY2FsbHlDZW50ZXJCYXNlIHtcbiAgY29tcG9zZXM6IGJhc2U7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBtYXJnaW46IGF1dG87XG59XG4uZnVsbFdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5pbWdDb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xufVxuXG4uaW1nQ29udGFpbmVyID4gaW1nIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG9wYWNpdHk6IDA7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.sidebarBase {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+}
+.pushLogo {
+  width: 70px;
+  margin-right: 10px;
+}
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border-bottom: 1px solid #e6ecf1;
+}
+.linksWrapper {
+  padding-left: 30px;
+  margin-top: 40px;
+}
+.link {
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+.active {
+  background: #fff;
+  border: 1px solid #e6ecf1;
+  border-right: none;
+}
+.activeLink {
+  color: rgb(38, 203, 124) !important;
+  font-family: ProximaNova-Bold;
+}
 
-      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9Dc3MvU2lkZWJhci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFlO0VBQ2YsYUFBYTtFQUNiLFlBQVk7QUFDZDtBQUNBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsZ0NBQWdDO0FBQ2xDO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLGVBQWU7QUFDakI7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQix5QkFBeUI7RUFDekIsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxtQ0FBbUM7RUFDbkMsNkJBQTZCO0FBQy9CIiwic291cmNlc0NvbnRlbnQiOlsiLnNpZGViYXJCYXNlIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMzAwcHg7XG59XG4ucHVzaExvZ28ge1xuICB3aWR0aDogNzBweDtcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xufVxuLmxvZ29XcmFwcGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZTZlY2YxO1xufVxuLmxpbmtzV3JhcHBlciB7XG4gIHBhZGRpbmctbGVmdDogMzBweDtcbiAgbWFyZ2luLXRvcDogNDBweDtcbn1cbi5saW5rIHtcbiAgcGFkZGluZzogMTBweDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuLmFjdGl2ZSB7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNlNmVjZjE7XG4gIGJvcmRlci1yaWdodDogbm9uZTtcbn1cbi5hY3RpdmVMaW5rIHtcbiAgY29sb3I6IHJnYigzOCwgMjAzLCAxMjQpICFpbXBvcnRhbnQ7XG4gIGZvbnQtZmFtaWx5OiBQcm94aW1hTm92YS1Cb2xkO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */
-    </style>
-    <style>
-      .contentBase {
-        text-align: left;
-        padding: 40px 20px 40px 60px;
-        max-width: 900px;
-      }
-      .divider {
-        width: 100%;
-        border-bottom: solid 1px #ececec;
-      }
-      .infoBase {
-        border-radius: 3px;
-        border-left: solid 4px rgb(56, 132, 255);
-        padding: 20px;
-        background: #f5f7f9;
-        display: flex;
-        align-items: center;
-      }
-      .infoIcon {
-        border: solid 3px;
-        padding: 5px;
-        width: 10px;
-        height: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border-color: #3e87ff;
-        font-size: 14px;
-        color: #3983ff;
-        font-weight: 800;
-      }
-      .infoDescription {
-        font-size: 16px;
-        margin-left: 20px;
-        color: #3b454e;
-      }
-      .fullImage {
-        width: 600px;
-        padding: 20px;
-        margin: 40px 20px;
-        box-shadow: 0px 0px 10px #b1b1b1;
-        border-radius: 10px;
-      }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9Dc3MvU2lkZWJhci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFlO0VBQ2YsYUFBYTtFQUNiLFlBQVk7QUFDZDtBQUNBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsZ0NBQWdDO0FBQ2xDO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLGVBQWU7QUFDakI7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQix5QkFBeUI7RUFDekIsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxtQ0FBbUM7RUFDbkMsNkJBQTZCO0FBQy9CIiwic291cmNlc0NvbnRlbnQiOlsiLnNpZGViYXJCYXNlIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMzAwcHg7XG59XG4ucHVzaExvZ28ge1xuICB3aWR0aDogNzBweDtcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xufVxuLmxvZ29XcmFwcGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZTZlY2YxO1xufVxuLmxpbmtzV3JhcHBlciB7XG4gIHBhZGRpbmctbGVmdDogMzBweDtcbiAgbWFyZ2luLXRvcDogNDBweDtcbn1cbi5saW5rIHtcbiAgcGFkZGluZzogMTBweDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuLmFjdGl2ZSB7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNlNmVjZjE7XG4gIGJvcmRlci1yaWdodDogbm9uZTtcbn1cbi5hY3RpdmVMaW5rIHtcbiAgY29sb3I6IHJnYigzOCwgMjAzLCAxMjQpICFpbXBvcnRhbnQ7XG4gIGZvbnQtZmFtaWx5OiBQcm94aW1hTm92YS1Cb2xkO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.contentBase {
+  text-align: left;
+  padding: 40px 20px 40px 60px;
+  max-width: 900px;
+}
+.divider {
+  width: 100%;
+  border-bottom: solid 1px #ececec;
+}
+.infoBase {
+  border-radius: 3px;
+  border-left: solid 4px #3884ff;
+  padding: 20px;
+  background: #f5f7f9;
+  display: flex;
+  align-items: center;
+}
+.infoIcon {
+  border: solid 3px;
+  padding: 5px;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-color: #3e87ff;
+  font-size: 14px;
+  color: #3983ff;
+  font-weight: 800;
+}
+.infoDescription {
+  font-size: 16px;
+  margin-left: 20px;
+  color: #3b454e;
+}
 
-      @media only screen and (max-width: 900px) {
-        .contentBase {
-          padding: 20px;
-        }
-        .fullImage {
-          width: 80%;
-        }
-      }
+.dangerBase {
+  border-radius: 3px;
+  padding: 20px;
+  background: #f5f7f9;
+  display: flex;
+  align-items: center;
+  /* composes: infoBase; */
+  border-left: solid 4px #ff3838;
+}
+.dangerIcon {
+  border: solid 3px;
+  padding: 5px;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-color: #ff3838;
+  font-size: 14px;
+  color: #ff3838;
+  font-weight: 800;
+}
 
-      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9Dc3MvQ29udGVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7RUFDaEIsNEJBQTRCO0VBQzVCLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsV0FBVztFQUNYLGdDQUFnQztBQUNsQztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLHdDQUF3QztFQUN4QyxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osV0FBVztFQUNYLFlBQVk7RUFDWixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixjQUFjO0VBQ2QsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGNBQWM7QUFDaEI7QUFDQTtFQUNFLFlBQVk7RUFDWixhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLGdDQUFnQztFQUNoQyxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRTtJQUNFLGFBQWE7RUFDZjtFQUNBO0lBQ0UsVUFBVTtFQUNaO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGVudEJhc2Uge1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xuICBwYWRkaW5nOiA0MHB4IDIwcHggNDBweCA2MHB4O1xuICBtYXgtd2lkdGg6IDkwMHB4O1xufVxuLmRpdmlkZXIge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyLWJvdHRvbTogc29saWQgMXB4ICNlY2VjZWM7XG59XG4uaW5mb0Jhc2Uge1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIGJvcmRlci1sZWZ0OiBzb2xpZCA0cHggcmdiKDU2LCAxMzIsIDI1NSk7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIGJhY2tncm91bmQ6ICNmNWY3Zjk7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uaW5mb0ljb24ge1xuICBib3JkZXI6IHNvbGlkIDNweDtcbiAgcGFkZGluZzogNXB4O1xuICB3aWR0aDogMTBweDtcbiAgaGVpZ2h0OiAxMHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBib3JkZXItY29sb3I6ICMzZTg3ZmY7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgY29sb3I6ICMzOTgzZmY7XG4gIGZvbnQtd2VpZ2h0OiA4MDA7XG59XG4uaW5mb0Rlc2NyaXB0aW9uIHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBtYXJnaW4tbGVmdDogMjBweDtcbiAgY29sb3I6ICMzYjQ1NGU7XG59XG4uZnVsbEltYWdlIHtcbiAgd2lkdGg6IDYwMHB4O1xuICBwYWRkaW5nOiAyMHB4O1xuICBtYXJnaW46IDQwcHggMjBweDtcbiAgYm94LXNoYWRvdzogMHB4IDBweCAxMHB4ICNiMWIxYjE7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcbiAgLmNvbnRlbnRCYXNlIHtcbiAgICBwYWRkaW5nOiAyMHB4O1xuICB9XG4gIC5mdWxsSW1hZ2Uge1xuICAgIHdpZHRoOiA4MCU7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */
-    </style>
-  </head>
+.codeBase {
+  border-radius: 3px;
+  /* border-left: solid 4px #3884ff; */
+  padding: 20px;
+  background: #f5f7f9;
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+}
+.codeIcon {
+  display: none;
+}
+
+.fullImage {
+  width: 600px;
+  padding: 20px;
+  margin: 40px 20px;
+  box-shadow: 0px 0px 10px #b1b1b1;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .contentBase {
+    padding: 20px;
+  }
+  .fullImage {
+    width: 80%;
+  }
+}
+
+.download-link {
+  color: #3884ff;
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 0 15px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9Dc3MvQ29udGVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7RUFDaEIsNEJBQTRCO0VBQzVCLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsV0FBVztFQUNYLGdDQUFnQztBQUNsQztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLDhCQUE4QjtFQUM5QixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osV0FBVztFQUNYLFlBQVk7RUFDWixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixjQUFjO0VBQ2QsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHdCQUF3QjtFQUN4Qiw4QkFBOEI7QUFDaEM7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osV0FBVztFQUNYLFlBQVk7RUFDWixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixjQUFjO0VBQ2QsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLG9DQUFvQztFQUNwQyxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIscUJBQXFCO0FBQ3ZCO0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxZQUFZO0VBQ1osYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixnQ0FBZ0M7RUFDaEMsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0U7SUFDRSxhQUFhO0VBQ2Y7RUFDQTtJQUNFLFVBQVU7RUFDWjtBQUNGOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtFQUNoQiwwQkFBMEI7RUFDMUIsZUFBZTtBQUNqQiIsInNvdXJjZXNDb250ZW50IjpbIi5jb250ZW50QmFzZSB7XG4gIHRleHQtYWxpZ246IGxlZnQ7XG4gIHBhZGRpbmc6IDQwcHggMjBweCA0MHB4IDYwcHg7XG4gIG1heC13aWR0aDogOTAwcHg7XG59XG4uZGl2aWRlciB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXItYm90dG9tOiBzb2xpZCAxcHggI2VjZWNlYztcbn1cbi5pbmZvQmFzZSB7XG4gIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgYm9yZGVyLWxlZnQ6IHNvbGlkIDRweCAjMzg4NGZmO1xuICBwYWRkaW5nOiAyMHB4O1xuICBiYWNrZ3JvdW5kOiAjZjVmN2Y5O1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmluZm9JY29uIHtcbiAgYm9yZGVyOiBzb2xpZCAzcHg7XG4gIHBhZGRpbmc6IDVweDtcbiAgd2lkdGg6IDEwcHg7XG4gIGhlaWdodDogMTBweDtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgYm9yZGVyLWNvbG9yOiAjM2U4N2ZmO1xuICBmb250LXNpemU6IDE0cHg7XG4gIGNvbG9yOiAjMzk4M2ZmO1xuICBmb250LXdlaWdodDogODAwO1xufVxuLmluZm9EZXNjcmlwdGlvbiB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgbWFyZ2luLWxlZnQ6IDIwcHg7XG4gIGNvbG9yOiAjM2I0NTRlO1xufVxuXG4uZGFuZ2VyQmFzZSB7XG4gIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgcGFkZGluZzogMjBweDtcbiAgYmFja2dyb3VuZDogI2Y1ZjdmOTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgLyogY29tcG9zZXM6IGluZm9CYXNlOyAqL1xuICBib3JkZXItbGVmdDogc29saWQgNHB4ICNmZjM4Mzg7XG59XG4uZGFuZ2VySWNvbiB7XG4gIGJvcmRlcjogc29saWQgM3B4O1xuICBwYWRkaW5nOiA1cHg7XG4gIHdpZHRoOiAxMHB4O1xuICBoZWlnaHQ6IDEwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJvcmRlci1jb2xvcjogI2ZmMzgzODtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBjb2xvcjogI2ZmMzgzODtcbiAgZm9udC13ZWlnaHQ6IDgwMDtcbn1cblxuLmNvZGVCYXNlIHtcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xuICAvKiBib3JkZXItbGVmdDogc29saWQgNHB4ICMzODg0ZmY7ICovXG4gIHBhZGRpbmc6IDIwcHg7XG4gIGJhY2tncm91bmQ6ICNmNWY3Zjk7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHdvcmQtd3JhcDogYnJlYWstd29yZDtcbn1cbi5jb2RlSWNvbiB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5mdWxsSW1hZ2Uge1xuICB3aWR0aDogNjAwcHg7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIG1hcmdpbjogNDBweCAyMHB4O1xuICBib3gtc2hhZG93OiAwcHggMHB4IDEwcHggI2IxYjFiMTtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA5MDBweCkge1xuICAuY29udGVudEJhc2Uge1xuICAgIHBhZGRpbmc6IDIwcHg7XG4gIH1cbiAgLmZ1bGxJbWFnZSB7XG4gICAgd2lkdGg6IDgwJTtcbiAgfVxufVxuXG4uZG93bmxvYWQtbGluayB7XG4gIGNvbG9yOiAjMzg4NGZmO1xuICBmb250LXdlaWdodDogNzAwO1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgcGFkZGluZzogMCAxNXB4O1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
   <body data-new-gr-c-s-check-loaded="14.993.0" data-gr-ext-installed="">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-      <div class="App">
-        <div class="homeBase">
-          <div class="mobileOnly">
-            <div class="logoWrapper">
-              <div class="pushLogo">
-                <div
-                  class="imgContainer"
-                  style="padding-bottom: 100%; background: none"
-                >
-                  <img
-                    src="/pushdocspage/images/logo.png"
-                    class="image"
-                    alt="TLC Images"
-                    style="transition: opacity 0.5s linear 0s; opacity: 1"
-                  />
-                </div>
-              </div>
-              <h2>LITTRA Push</h2>
-            </div>
-          </div>
-          <div class="sidebar">
-            <div class="sidebarBase">
-              <div class="logoWrapper">
-                <div class="pushLogo">
-                  <div
-                    class="imgContainer"
-                    style="padding-bottom: 100%; background: none"
-                  >
-                    <img
-                      src="/pushdocspage/images/logo.png"
-                      class="image"
-                      alt="TLC Images"
-                      style="transition: opacity 0.5s linear 0s; opacity: 1"
-                    />
-                  </div>
-                </div>
-                <h2>LITTRA Push</h2>
-              </div>
-              <div class="linksWrapper">
-                <div class="link active">
-                  <a href="#home" class="activeLink">Getting Start</a>
-                </div>
-                <div class="link false">
-                  <a href="#start" class="false">Onboarding</a>
-                </div>
-                <div class="link false">
-                  <a href="/#home" class="false">Start with Id</a>
-                </div>
-                <div class="link false">
-                  <a href="/#home" class="false">Getting Start</a>
-                </div>
-                <div class="link false">
-                  <a href="/#home" class="false">Getting Start</a>
-                </div>
-                <div class="link false">
-                  <a href="/#home" class="false">Getting Start</a>
-                </div>
-                <div class="link false">
-                  <a href="/#home" class="false">Getting Start</a>
-                </div>
-                <div class="link false">
-                  <a href="/#home" class="false">Getting Start</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="contentBase">
-              <h1>Getting Started</h1>
-              <div class="divider"></div>
-              <h2 id="home"><a href="/#home">Getting Super Powers</a></h2>
-              <p>Becoming a super hero is a fairly straight forward process:</p>
-              <div class="infoBase">
-                <div class="infoIcon">i</div>
-                <span class="infoDescription">
-                  Super-powers are granted randomly so please submit an issue if
-                  you're not happy with yours. if you're not happy with
-                  yours.</span
-                >
-              </div>
-              <div class="fullImage">
-                <div
-                  class="imgContainer"
-                  style="padding-bottom: 56%; background: none"
-                >
-                  <img
-                    src="/pushdocspage/images/1.png"
-                    class="image"
-                    alt="TLC Images"
-                    style="transition: opacity 0.5s linear 0s; opacity: 1"
-                  />
-                </div>
-              </div>
-              <h2 id="start"><a href="/#home">Getting Super Powers</a></h2>
-              <p>Becoming a super hero is a fairly straight forward process:</p>
-              <div class="infoBase">
-                <div class="infoIcon">i</div>
-                <span class="infoDescription">
-                  Super-powers are granted randomly so please submit an issue if
-                  you're not happy with yours.</span
-                >
-              </div>
-              <div class="fullImage">
-                <div
-                  class="imgContainer"
-                  style="padding-bottom: 56%; background: none"
-                >
-                  <img
-                    src="/pushdocspage/images/1.png"
-                    class="image"
-                    alt="TLC Images"
-                    style="transition: opacity 0.5s linear 0s; opacity: 1"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="root"><div class="App"><div class="homeBase"><div class="mobileOnly"><div class="logoWrapper"><div class="pushLogo"><div class="imgContainer" style="padding-bottom: 100%; background: none;"><img src="/pushdocspage/images/logo.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><h2>LITTRA Push</h2></div></div><div class="sidebar"><div class="sidebarBase"><div class="logoWrapper"><div class="pushLogo"><div class="imgContainer" style="padding-bottom: 100%; background: none;"><img src="/pushdocspage/images/logo.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><h2>LITTRA Push</h2></div><div class="linksWrapper"><div class="link false"><a href="#home" class=" false">Getting Start</a></div><div class="link false"><a href="#browser-support" class=" false">Browser support</a></div><div class="link false"><a href="#sign-up" class=" false">Sign UP</a></div><div class="link false"><a href="#create-project" class=" false">Create Project</a></div><div class="link false"><a href="#add-script" class=" false">Add Script to Project</a></div><div class="link false"><a href="#test-device" class=" false">Test Device</a></div><div class="link false"><a href="#send-notification" class=" false">Send Notification</a></div><div class="link false"><a href="#message-track" class=" false">Message Track</a></div><div class="link false"><a href="#send-unique-user-message" class=" false">Send Unique User Message</a></div><div class="link false"><a href="#remove-user-id" class=" false">Remove User Id</a></div><div class="link false"><a href="#integrate-api" class=" false">Integrate API</a></div><div class="link false"><a href="#help" class=" false">Help</a></div><div class="link false"><a href="#feedback" class=" false">Feedback</a></div></div></div></div><div class="container"><div class="contentBase"><h1>Getting Started</h1><div class="divider"></div><h2 id="home"><a href="/pushdocspage#home">LITTRA PUSH</a></h2><p>Littra Push is a fast and robust solution for customer engagement. Our service enables push notification prompt on websites, opting which directs real-time notifications to the user’s device. Littra Push works with popular operating systems and content management platforms. You also get to easily keep tabs on user engagement metrics.</p><div class="infoBase"><div class="infoIcon">i</div><span class="infoDescription">Littra Push works with almost all popular latest browsers and devices.</span></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/discount-alert.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="browser-support"><a href="/pushdocspage#home">Browser Support</a></h2><p>Following browsers are supported by our service:<br><br><table><th>Browser</th><th>Version</th><th>Device</th><tr><td>Chrome</td><td>Desktop</td><td>50</td></tr><tr><td>Firefox</td><td>Desktop</td><td>44</td></tr><tr><td>Edge Old</td><td>Desktop</td><td>17-18</td></tr><tr><td>Edge Chromium</td><td>Desktop</td><td>79</td></tr><tr><td>Opera</td><td>Desktop</td><td>42</td></tr><tr><td>Chrome</td><td>Android</td><td>88</td></tr><tr><td>Firefox</td><td>Android</td><td>83</td></tr><tr><td>Opera</td><td>Mobile</td><td>59</td></tr><tr><td>UC Browser</td><td>Mobile</td><td>12.12</td></tr><tr><td>Samsung Internet</td><td>Mobile</td><td>4</td></tr><tr><td>Internet Explorer</td><td>All</td><td>Not supported yet</td></tr><tr><td>Safari</td><td>All</td><td>Not supported yet</td></tr></table></p><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/browser-support.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="infoBase"><div class="infoIcon">i</div><span class="infoDescription">Red indicates not supported, Green indicates supported, Yellow indicates partial support and Gray indicates support unknown</span></div><div class="divider"></div><h2 id="sign-up"><a href="/pushdocspage#home">Sign UP</a></h2><p>Signing up is a fairly easy process with Littra Push, you can either log in using your Google account or just log in directly using your email and set a password, no need to register.</p><div class="infoBase"><div class="infoIcon">i</div><span class="infoDescription">The login and signup processes are combined, so no need to signup separately.</span></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/login.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="create-project"><a href="/pushdocspage#home">Create Project</a></h2><p>Inorder to create new project, click Projects section in the sidebar then click New Projects button in the top right corner, then enter Project Name and Link and click create button.<br>You can create multiple projects for a single product and assign each project for multiple purposes. Each project can have different logo and title to showcase its purpose.<ul>Examples:<li>Alert users when a discount is available.</li><li>Alert users when the stock of a specific product is running out.</li><li>Alert users when is product is about to be delivered.</li><li>And many more.</li></ul></p><div class="infoBase"><div class="infoIcon">i</div><span class="infoDescription">You can create multiple projects, and send push notification for that particular project.</span></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/create-project.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="add-script"><a href="/pushdocspage#home">Add Script</a></h2><div class="dangerBase"><div class="dangerIcon">i</div><span class="infoDescription">In case you already have a "serviceworker" in your site you don't have to paste the "service.js" file in the second step</span></div><p>After creating project an API Key prompt appears, copy that script and follow the instructions:<br><ol>Adding our script is a two step process:<li>Paste the copied script to your websites index.html in head tag.<div class="codeBase"><div class="codeIcon">i</div><span class="infoDescription"><pre>&lt;head&gt; 
+&lt;script 
+src="https://littrapush.s3.ap-south-1.amazonaws.com/sdk/client.js?apiKey=YOUR_API_KEY"
+id="littrapush" type="text/javascript"&gt;
+&lt;/script&gt;
+&lt;/head&gt;</pre></span></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 80%; background: none;"><img src="/pushdocspage/images/script-api.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div></li><li>Step 2 can be divided into two parts:<ol type="a"><li>If your website already has a serviceworker you can skip this step</li><li>Else, you have to download<a href="/pushdocspage/static/media/service.f4e2972f.zip" download="Service" rel="noopener noreferrer" class="download-link">Service.zip</a>uncompress the service.js and paste it into your root directory of your project. Furthermore you have to add following script to your head tag too.<div class="codeBase"><div class="codeIcon">i</div><span class="infoDescription"><pre>&lt;script&gt;
+window.LITTRA.registerServiceWorker();
+&lt;/script&gt; </pre></span></div></li></ol></li></ol></p><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/root-dir.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/script-head.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="test-device"><a href="/pushdocspage#home">Test Device</a></h2><p>Test Device feature generally gives you a demo of how our push notification service works. Push notification will be sent to your device showcasing how it will appear on the end-users systems.</p><div class="infoBase"><div class="infoIcon">i</div><span class="infoDescription"> It's always better to test first then send notification to end-users.</span></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/add-new-test.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="send-notification"><a href="/pushdocspage#home">Send Notification</a></h2><p>Push notifications can be sent easily by just single-click. Furthermore you can also send push notifications targeting user types (real-time, past, current) and add images to illustrate your purpose.</p><div class="infoBase"><div class="infoIcon">i</div><span class="infoDescription">Users meta-data makes targeting a specific group of individuals more easy.</span></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/send-notification.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/send-notification-features.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="message-track"><a href="/pushdocspage#home">Message Track</a></h2><p>We keep log of all the messages sent in a project, so client can easily track the old messages sent to the users and can even filter messages using the search feature.</p><div class="infoBase"><div class="infoIcon">i</div><span class="infoDescription">Messages can be filtered by Title or Body Message string.</span></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/messages count.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/message-log.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="send-unique-user-message"><a href="/pushdocspage#home">Send Unique User Message</a></h2><p>Littra Push provides a service in which a user can send the notification to a unique user it want, which makes it easier to use. </p><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/1.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="remove-user-id"><a href="/pushdocspage#home">Remove User Id</a></h2><p>The Login and Logout is the main feature of any website where the user can signIn,signOut or delete his account as per his choice. The codes for login and logOut are as follows-</p><div class="codeBase"><div class="codeIcon">i</div><span class="infoDescription"><pre>
+const login = async (userId, meta) =&gt; {
+  const deviceId = localStorage.getItem(DEVICE_ID_KEY);
+
+  return await postCall("persona/login", window.API_KEY, {
+    deviceId,
+    meta,
+    userId
+  });
+};
+
+const logout = async () =&gt; {
+  const deviceId = localStorage.getItem(DEVICE_ID_KEY);
+  return await postCall("persona/logout", Window.API_KEY, {
+    deviceId
+  });
+};
+
+window.LITTRA = {
+  login,
+  logout,
+  registerServiceWorker
+};</pre></span></div><div class="divider"></div><h2 id="integrate-api"><a href="/pushdocspage#home">Integrate-Api</a></h2><p>This code will guide you to implement api in your website.</p><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/1.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="help"><a href="/pushdocspage#home">Help</a></h2><p>For any kind of help please go on below link.</p><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/1.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div><div class="divider"></div><h2 id="feedback"><a href="/pushdocspage#home">Feedback</a></h2><p>Please provide your valuable feedback, that will help us to improve our performance for future purpose.</p><div class="fullImage"><div class="imgContainer" style="padding-bottom: 56%; background: none;"><img src="/pushdocspage/images/1.png" class="image" alt="TLC Images" style="transition: opacity 0.5s linear 0s; opacity: 1;"></div></div></div></div></div></div></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -580,5 +512,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
-</html>
+ 
+
+</body></html>
